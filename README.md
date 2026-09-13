@@ -77,9 +77,28 @@ npm run preview
 
 ---
 
-## 🌐 Deploying to GitHub Pages / Vercel / Netlify
+## 🌐 Deployment Guide
 
-### Deploying to Vercel or Netlify (Recommended)
+### Deploying to Render (Recommended)
+
+#### Option 1: Automatic Blueprint (One-click)
+1. Push your repository to GitHub.
+2. Go to [Render Dashboard](https://dashboard.render.com/) -> **Blueprints** -> **New Blueprint Instance**.
+3. Connect your repository. Render will automatically read [render.yaml](file:///render.yaml) and configure everything.
+
+#### Option 2: Manual Static Site on Render
+1. Go to [Render Dashboard](https://dashboard.render.com/) -> **New +** -> **Static Site**.
+2. Connect your GitHub repository.
+3. Configure the settings:
+   - **Name**: `sparsh-portfolio` (or your preferred name)
+   - **Branch**: `main`
+   - **Build Command**: `npm install && npm run build`
+   - **Publish Directory**: `dist`
+4. Click **Create Static Site**.
+
+---
+
+### Deploying to Vercel / Netlify
 1. Push this repository to GitHub.
 2. Import the repository into [Vercel](https://vercel.com) or [Netlify](https://netlify.com).
 3. The build command (`npm run build`) and output directory (`dist`) will be automatically detected.

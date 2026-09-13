@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Code2, Sparkles, Send } from 'lucide-react';
+import { ArrowRight, Code2, Send } from 'lucide-react';
 
 export default function Hero() {
   const handleScrollTo = (e, id) => {
